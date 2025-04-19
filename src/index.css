@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(240, 239, 239);
+    transition: 0.5s;
+
+}
+.container.dark{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #5e5e5e;
+    color: aliceblue;
+}
+

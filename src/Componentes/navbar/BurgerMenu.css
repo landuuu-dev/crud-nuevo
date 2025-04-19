@@ -1,0 +1,101 @@
+/* Estilos para el ícono de burger */
+.burger-icon {
+    position: fixed;
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para las líneas del ícono */
+  .burger-line {
+    width: 30px;
+    height: 4px;
+    background-color: #f18e8e; /* Color rosado */
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  /* Estilos para el menú desplegable */
+  .burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0; /* Inicialmente el menú está oculto */
+    height: 100vh;
+    background-color: #ffe3ea; /* Color de fondo del menú */
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    padding-top: 60px; /* Espacio desde el borde superior */
+  }
+
+  .burger-menu.dark{
+    color: #ff9b9b;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0; /* Inicialmente el menú está oculto */
+    height: 100vh;
+    background-color: #727171;; /* Color de fondo del menú */
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    padding-top: 60px; /* Espacio desde el borde superior */
+  }
+ 
+  .burger-menu.open {
+    width: 250px; /* Ancho del menú cuando se abre */
+  }
+
+  
+  .burger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .burger-menu ul li {
+    margin: 20px 0;
+  }
+  
+  .burger-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .burger-menu ul li a:hover {
+    color: #f18e8e; /* Color rosado al pasar el mouse */
+  }
+
+  .luna{
+    align-items: center;
+  }
+  
+  /* Media query para ocultar el ícono de burger en pantallas grandes */
+  @media (min-width: 768px) {
+    .burger-icon {
+      display: none; /* Ocultamos el ícono de burger en pantallas grandes */
+    }
+
+    @media (min-width: 768px) {
+        .burger-completo{
+            display: none;
+        }
+    }
+  
+    /* Si necesitas mostrar otro menú en pantallas grandes, puedes agregarlo aquí */
+  }
+  
